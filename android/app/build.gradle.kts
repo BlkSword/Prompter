@@ -42,3 +42,20 @@ android {
 flutter {
     source = "../.."
 }
+
+buildscript {
+ext.kotlin_version = '1.6.10'
+repositories {
+maven { url 'https://maven.aliyun.com/repository/google' }
+maven { url 'https://maven.aliyun.com/repository/jcenter' }
+maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+}
+}
+
+allprojects {
+repositories {
+maven { url 'https://maven.aliyun.com/repository/google' }
+maven { url 'https://maven.aliyun.com/repository/jcenter' }
+maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
+}
+}
